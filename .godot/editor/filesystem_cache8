@@ -1,0 +1,22 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1719951331
+1.png::CompressedTexture2D::3530525412567830786::1719933036::1719933072::1::::<><>::
+2.png::CompressedTexture2D::4657839298052365811::1719933036::1719933072::1::::<><>::
+3.png::CompressedTexture2D::4729698844072833024::1719933036::1719933072::1::::<><>::
+4.png::CompressedTexture2D::7985755505455961330::1719933036::1719933072::1::::<><>::
+5.png::CompressedTexture2D::2368000376103745722::1719933036::1719933072::1::::<><>::
+6.png::CompressedTexture2D::3410928014218792269::1719933036::1719933072::1::::<><>::
+7.png::CompressedTexture2D::3158399083987805117::1719933036::1719933072::1::::<><>::
+8.png::CompressedTexture2D::3541361732372071543::1719933036::1719933072::1::::<><>::
+Almighty White Pixel.png::CompressedTexture2D::610036475978395047::1719932342::1719933072::1::::<><>::
+fish.png::CompressedTexture2D::5858582723292313288::1719934570::1719938469::1::::<><>::
+FishingMiniGame.cs::CSharpScript::-1::1719950308::0::1::::<>Node2D<>::
+FishingMiniGameUI.cs::CSharpScript::-1::1719942912::0::1::::<>Node<>::
+FishingMinigame_Main.tscn::PackedScene::4046187276733109893::1719950205::0::1::::<><>::uid://cuq36raoyfcdd::::res://Fishing_mini_game_UI.tscn<>uid://dca03xxohyks5::::res://fishing_mini_game.tscn
+fishing_mini_game.tscn::PackedScene::7301208909617827290::1719951271::0::1::::<><>::res://FishingMiniGame.cs<>uid://ixrhgv8l87tj::::res://Almighty White Pixel.png<>uid://s56vi22n67nq::::res://White Bar.png<>uid://dl1mhx1b1byri::::res://4.png
+Fishing_mini_game_UI.tscn::PackedScene::6211404613185638361::1719950205::0::1::::<><>::res://FishingMiniGameUI.cs<>uid://cpp7ab0cqmpfc::::res://fish.png<>uid://s56vi22n67nq::::res://White Bar.png<>uid://yy6h7dytbh76::::res://White Bar Border.png
+icon.svg::CompressedTexture2D::2559554332896334970::1719932216::1719932228::1::::<><>::
+LICENSE.md::TextFile::-1::1719951247::0::1::::<><>::
+README.md::TextFile::-1::1719951247::0::1::::<><>::
+White Bar Border.png::CompressedTexture2D::1735973727240813427::1719932338::1719933072::1::::<><>::
+White Bar.png::CompressedTexture2D::1327250709696044466::1719932336::1719933072::1::::<><>::

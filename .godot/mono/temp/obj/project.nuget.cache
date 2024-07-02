@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "FYOkXu4ANW8=",
+  "success": true,
+  "projectFilePath": "E:\\Godot\\Projects\\SummerFishing\\Godot.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aohas\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
+    "C:\\Users\\aohas\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",
+    "C:\\Users\\aohas\\.nuget\\packages\\godotsharpeditor\\4.2.2\\godotsharpeditor.4.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://dca03xxohyks5"]
+
+[ext_resource type="Script" path="res://FishingMiniGame.cs" id="1_alabv"]
+[ext_resource type="Texture2D" uid="uid://ixrhgv8l87tj" path="res://Almighty White Pixel.png" id="1_aohcx"]
+[ext_resource type="Texture2D" uid="uid://s56vi22n67nq" path="res://White Bar.png" id="2_iqpn5"]
+[ext_resource type="Texture2D" uid="uid://dl1mhx1b1byri" path="res://4.png" id="3_i2vuk"]
+
+[sub_resource type="Animation" id="Animation_8qsrd"]
+resource_name = "FishDefault"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5is8h"]
+_data = {
+"FishDefault": SubResource("Animation_8qsrd")
+}
+
+[node name="FishingMiniGame" type="Node2D"]
+script = ExtResource("1_alabv")
+hookPullPower = 0.04
+hookGravity = 0.015
+
+[node name="Background" type="Sprite2D" parent="."]
+self_modulate = Color(0.580099, 0.35373, 0.952656, 1)
+position = Vector2(896, 314)
+scale = Vector2(21.5, 195)
+texture = ExtResource("1_aohcx")
+
+[node name="Hook" type="Sprite2D" parent="."]
+position = Vector2(896, 307)
+scale = Vector2(0.115, 0.929164)
+texture = ExtResource("2_iqpn5")
+
+[node name="Fish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(896, 307)
+scale = Vector2(3, 3)
+texture = ExtResource("3_i2vuk")
+hframes = 2
+
+[node name="FishAnimation" type="AnimationPlayer" parent="Fish"]
+libraries = {
+"": SubResource("AnimationLibrary_5is8h")
+}
+
+[node name="BottomPivot" type="Node2D" parent="."]
+position = Vector2(896, 496)
+
+[node name="TopPivot" type="Node2D" parent="."]
+position = Vector2(896, 123)

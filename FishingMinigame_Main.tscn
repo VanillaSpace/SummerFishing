@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxwad37302xyr"]
+
+[ext_resource type="PackedScene" uid="uid://cuq36raoyfcdd" path="res://Fishing_mini_game_UI.tscn" id="1_hi5j1"]
+[ext_resource type="PackedScene" uid="uid://dca03xxohyks5" path="res://fishing_mini_game.tscn" id="2_hqs64"]
+
+[node name="FishingMinigameMain" type="Node"]
+
+[node name="FishingMiniGameUi" parent="." instance=ExtResource("1_hi5j1")]
+
+[node name="FishingMiniGame" parent="." instance=ExtResource("2_hqs64")]
