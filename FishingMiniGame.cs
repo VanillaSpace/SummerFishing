@@ -25,6 +25,13 @@ public partial class FishingMiniGame : Node2D
 	[Export] float hookProgress;
 	[Export] float hookPower = 0.2f;
 	
+	bool isPaused;
+	
+	int fishCaughtCount;
+	
+	[Signal] public delegate void OnFishCaughtEventHandler(int count);
+	[Signal] public delegate void OnFishProgressEventHandler(float progress);
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -40,6 +47,17 @@ public partial class FishingMiniGame : Node2D
 	public override void _Process(double delta)
 	{
 		float timeDelta = (float)delta;
+		
+		if(Input.IsActionJustPressed("Restart"))
+		{
+			ForceRestart();
+		}
+		
+		if(isPaused == true)
+		{
+			return;
+		}
+		
 		ProcessFish(timeDelta);
 		ProcessHook(timeDelta);
 		DetectProgress(timeDelta);
@@ -68,13 +86,55 @@ public partial class FishingMiniGame : Node2D
 		hookVelocity -= hookGravity * timeDelta;
 		hookPosition += hookVelocity;
 		hookPosition = Mathf.Clamp(hookPosition, hookSize/2f, 1f - hookSize/2f);
+		
+		if(hookPosition == hookSize/2f && hookVelocity < 0f)
+		{
+			hookVelocity = 0f;
+		}
+		if(hookPosition == 1f - hookSize/2f && hookVelocity > 0f)
+		{
+			hookVelocity = 0f;
+		}
 		hook.GlobalPosition = CalculatePosition(hookPosition);
 	}
 	
-	void DetectProgress(float deltaTime)
+	void DetectProgress(float timeDelta)
 	{
 		float HookTopBoundary = hookPosition + hookSize/2f;
-		float hookBottomBoundry = hookPosition - hookSize/2f;
+		float hookBottomBoundary = hookPosition - hookSize/2f;
+		
+		if(hookBottomBoundary < fishPosition && fishPosition < HookTopBoundary)
+		{
+			AddProgress(hookPower * timeDelta);
+		}
+		
+		if(hookProgress >= 1f)
+		{
+			FishCaught();
+		}
+	}
+	
+	void AddProgress(float amount)
+	{
+		hookProgress += amount;
+		EmitSignal("OnFishProgress", hookProgress);
+	}
+	
+	void SetProgress(float to)
+	{
+		hookProgress = to;
+		EmitSignal("OnFishProgress", hookProgress);
+	}
+	
+	void FishCaught()
+	{
+		GD.Print("Fish Caught!");
+		isPaused = true;
+		fishCaughtCount += 1;
+		EmitSignal("OnFishCaught", fishCaughtCount);
+		
+		//Wait until next Frame
+		CallDeferred("ForceRestart");
 	}
 	
 	Vector2 CalculatePosition(float normalizedPos)
@@ -84,5 +144,13 @@ public partial class FishingMiniGame : Node2D
 		newPos *= normalizedPos;
 		newPos += topPivot.GlobalPosition;
 		return newPos;
+	}
+	
+	void ForceRestart()
+	{
+		hookPosition = 0f;
+		hookVelocity = 0f;
+		SetProgress(0f);
+		isPaused = false;
 	}
 }

@@ -5,6 +5,9 @@
 
 [node name="FishingMinigameMain" type="Node"]
 
+[node name="FishingMiniGame" parent="." instance=ExtResource("2_hqs64")]
+
 [node name="FishingMiniGameUi" parent="." instance=ExtResource("1_hi5j1")]
 
-[node name="FishingMiniGame" parent="." instance=ExtResource("2_hqs64")]
+[connection signal="OnFishCaught" from="FishingMiniGame" to="FishingMiniGameUi" method="OnFishingMiniGameOnFishCaught"]
+[connection signal="OnFishProgress" from="FishingMiniGame" to="FishingMiniGameUi" method="OnFishingMiniGameOnFishProgress"]

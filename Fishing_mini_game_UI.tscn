@@ -31,10 +31,10 @@ text = "0
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]
 layout_mode = 0
-offset_left = 339.0
-offset_top = 422.0
-offset_right = 639.0
-offset_bottom = 482.0
+offset_left = 366.0
+offset_top = 435.0
+offset_right = 666.0
+offset_bottom = 495.0
 rotation = -1.5708
 texture_under = ExtResource("3_ve02q")
 texture_over = ExtResource("4_1nyij")
