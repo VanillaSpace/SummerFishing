@@ -1,7 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://cuq36raoyfcdd"]
+[gd_scene load_steps=17 format=3 uid="uid://cuq36raoyfcdd"]
 
 [ext_resource type="Script" path="res://FishingMiniGameUI.cs" id="1_o0pc5"]
 [ext_resource type="Texture2D" uid="uid://cpp7ab0cqmpfc" path="res://fish.png" id="1_rolf4"]
+[ext_resource type="Texture2D" uid="uid://u0hima5u57i0" path="res://demo01_PixelSky_1920x1080.png" id="2_0kab5"]
 [ext_resource type="Texture2D" uid="uid://s56vi22n67nq" path="res://White Bar.png" id="3_ve02q"]
 [ext_resource type="Texture2D" uid="uid://0j626l26fvjt" path="res://Fishing_hut.png" id="3_y4d57"]
 [ext_resource type="Texture2D" uid="uid://c3s5ff1hddaff" path="res://Water.png" id="4_0s2mf"]
@@ -93,6 +94,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_o0pc5")
 
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(547, 319)
+scale = Vector2(0.633691, 0.612616)
+texture = ExtResource("2_0kab5")
+
 [node name="Fish" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(48, 28)
@@ -107,7 +114,7 @@ texture = ExtResource("3_y4d57")
 
 [node name="Water1" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(630, 596)
+position = Vector2(630.417, 600.667)
 scale = Vector2(3.40104, 3.04167)
 texture = ExtResource("4_0s2mf")
 hframes = 3
@@ -120,7 +127,7 @@ libraries = {
 
 [node name="Water2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(737, 596)
+position = Vector2(737.417, 600.667)
 scale = Vector2(3.40104, 3.04167)
 texture = ExtResource("4_0s2mf")
 hframes = 3
@@ -133,7 +140,7 @@ libraries = {
 
 [node name="Water3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(845, 595)
+position = Vector2(845.417, 601.667)
 scale = Vector2(3.40104, 3.04167)
 texture = ExtResource("4_0s2mf")
 hframes = 3
@@ -146,7 +153,7 @@ libraries = {
 
 [node name="Water4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(950, 595)
+position = Vector2(950.417, 601.667)
 scale = Vector2(3.40104, 3.04167)
 texture = ExtResource("4_0s2mf")
 hframes = 3
@@ -159,7 +166,7 @@ libraries = {
 
 [node name="Water5" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(1058, 595)
+position = Vector2(1058.42, 601.667)
 scale = Vector2(3.40104, 3.04167)
 texture = ExtResource("4_0s2mf")
 hframes = 3
@@ -198,7 +205,7 @@ texture = ExtResource("5_nwdmi")
 
 [node name="Fisher" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(790, 478)
+position = Vector2(790, 489)
 scale = Vector2(3, 3)
 texture = ExtResource("6_wh3cj")
 hframes = 4
@@ -210,7 +217,7 @@ libraries = {
 
 [node name="Boat" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(723, 534)
+position = Vector2(722, 545)
 scale = Vector2(3, 3)
 texture = ExtResource("7_138vj")
 

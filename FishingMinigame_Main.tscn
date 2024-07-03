@@ -6,9 +6,9 @@
 
 [node name="FishingMinigameMain" type="Node"]
 
-[node name="FishingMiniGame" parent="." instance=ExtResource("2_hqs64")]
-
 [node name="FishingMiniGameUi" parent="." instance=ExtResource("1_hi5j1")]
+
+[node name="FishingMiniGame" parent="." instance=ExtResource("2_hqs64")]
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("3_b017m")]
 volume_db = -27.0
