@@ -32,18 +32,18 @@ hookGravity = 0.015
 
 [node name="Background" type="Sprite2D" parent="."]
 self_modulate = Color(0.580099, 0.35373, 0.952656, 1)
-position = Vector2(896, 314)
+position = Vector2(930, 315)
 scale = Vector2(21.5, 195)
 texture = ExtResource("1_aohcx")
 
 [node name="Hook" type="Sprite2D" parent="."]
-position = Vector2(896, 307)
+position = Vector2(930, 308)
 scale = Vector2(0.115, 0.929164)
 texture = ExtResource("2_iqpn5")
 
 [node name="Fish" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(896, 307)
+position = Vector2(930, 308)
 scale = Vector2(3, 3)
 texture = ExtResource("3_i2vuk")
 hframes = 2
@@ -54,7 +54,7 @@ libraries = {
 }
 
 [node name="BottomPivot" type="Node2D" parent="."]
-position = Vector2(896, 496)
+position = Vector2(930, 497)
 
 [node name="TopPivot" type="Node2D" parent="."]
-position = Vector2(896, 123)
+position = Vector2(930, 124)

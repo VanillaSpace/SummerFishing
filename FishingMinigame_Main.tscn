@@ -1,13 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxwad37302xyr"]
+[gd_scene load_steps=4 format=3 uid="uid://bxwad37302xyr"]
 
 [ext_resource type="PackedScene" uid="uid://cuq36raoyfcdd" path="res://Fishing_mini_game_UI.tscn" id="1_hi5j1"]
 [ext_resource type="PackedScene" uid="uid://dca03xxohyks5" path="res://fishing_mini_game.tscn" id="2_hqs64"]
+[ext_resource type="PackedScene" uid="uid://cxt3c6lt26kv" path="res://Music.tscn" id="3_b017m"]
 
 [node name="FishingMinigameMain" type="Node"]
 
 [node name="FishingMiniGame" parent="." instance=ExtResource("2_hqs64")]
 
 [node name="FishingMiniGameUi" parent="." instance=ExtResource("1_hi5j1")]
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_b017m")]
+volume_db = -27.0
 
 [connection signal="OnFishCaught" from="FishingMiniGame" to="FishingMiniGameUi" method="OnFishingMiniGameOnFishCaught"]
 [connection signal="OnFishProgress" from="FishingMiniGame" to="FishingMiniGameUi" method="OnFishingMiniGameOnFishProgress"]

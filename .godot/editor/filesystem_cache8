@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719962791
+::res://::1719964678
 1.png::CompressedTexture2D::3530525412567830786::1719933036::1719933072::1::::<><>::
+02 sol beach (day).wav::AudioStreamWAV::1846915627166740952::1719964678::1719964709::1::::<><>::
 2.png::CompressedTexture2D::4657839298052365811::1719933036::1719933072::1::::<><>::
 3.png::CompressedTexture2D::4729698844072833024::1719933036::1719933072::1::::<><>::
 4.png::CompressedTexture2D::7985755505455961330::1719933036::1719933072::1::::<><>::
@@ -13,14 +14,15 @@ Boat.png::CompressedTexture2D::8167901518576103442::1719933036::1719962792::1:::
 fish.png::CompressedTexture2D::5858582723292313288::1719934570::1719938469::1::::<><>::
 FishingMiniGame.cs::CSharpScript::-1::1719954911::0::1::::<>Node2D<>::
 FishingMiniGameUI.cs::CSharpScript::-1::1719962618::0::1::::<>Control<>::
-FishingMinigame_Main.tscn::PackedScene::4046187276733109893::1719962606::0::1::::<><>::uid://cuq36raoyfcdd::::res://Fishing_mini_game_UI.tscn<>uid://dca03xxohyks5::::res://fishing_mini_game.tscn
+FishingMinigame_Main.tscn::PackedScene::4046187276733109893::1719962908::0::1::::<><>::uid://cuq36raoyfcdd::::res://Fishing_mini_game_UI.tscn<>uid://dca03xxohyks5::::res://fishing_mini_game.tscn
 Fishing_hut.png::CompressedTexture2D::1775232580433647185::1719933036::1719956230::1::::<><>::
-fishing_mini_game.tscn::PackedScene::7301208909617827290::1719962606::0::1::::<><>::res://FishingMiniGame.cs<>uid://ixrhgv8l87tj::::res://Almighty White Pixel.png<>uid://s56vi22n67nq::::res://White Bar.png<>uid://dl1mhx1b1byri::::res://4.png
-Fishing_mini_game_UI.tscn::PackedScene::6211404613185638361::1719962632::0::1::::<><>::res://FishingMiniGameUI.cs<>uid://cpp7ab0cqmpfc::::res://fish.png<>uid://s56vi22n67nq::::res://White Bar.png<>uid://0j626l26fvjt::::res://Fishing_hut.png<>uid://c3s5ff1hddaff::::res://Water.png<>uid://yy6h7dytbh76::::res://White Bar Border.png<>uid://b66hejndrdlvj::::res://Tile_25.png<>uid://bfeip8k5ypbuj::::res://GraveRobber_fish.png
+fishing_mini_game.tscn::PackedScene::7301208909617827290::1719962908::0::1::::<><>::res://FishingMiniGame.cs<>uid://ixrhgv8l87tj::::res://Almighty White Pixel.png<>uid://s56vi22n67nq::::res://White Bar.png<>uid://dl1mhx1b1byri::::res://4.png
+Fishing_mini_game_UI.tscn::PackedScene::6211404613185638361::1719962908::0::1::::<><>::res://FishingMiniGameUI.cs<>uid://cpp7ab0cqmpfc::::res://fish.png<>uid://s56vi22n67nq::::res://White Bar.png<>uid://0j626l26fvjt::::res://Fishing_hut.png<>uid://c3s5ff1hddaff::::res://Water.png<>uid://yy6h7dytbh76::::res://White Bar Border.png<>uid://b66hejndrdlvj::::res://Tile_25.png<>uid://bfeip8k5ypbuj::::res://GraveRobber_fish.png<>uid://domue6h637tda::::res://Boat.png
 GraveRobber_fish.png::CompressedTexture2D::2746136685864532333::1719933035::1719960638::1::::<><>::
 icon.svg::CompressedTexture2D::2559554332896334970::1719932216::1719932228::1::::<><>::
 LICENSE.md::TextFile::-1::1719951247::0::1::::<><>::
 README.md::TextFile::-1::1719951247::0::1::::<><>::
+Music.tscn::PackedScene::189062154173254157::1719964687::0::1::::<><>::
 Tile_25.png::CompressedTexture2D::4626703201924706887::1719960276::1719960278::1::::<><>::
 Water.png::CompressedTexture2D::6777118530680543831::1719933036::1719956259::1::::<><>::
 White Bar Border.png::CompressedTexture2D::1735973727240813427::1719932338::1719933072::1::::<><>::

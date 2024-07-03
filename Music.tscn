@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxt3c6lt26kv"]
+
+[ext_resource type="AudioStream" uid="uid://1kwovyamb6ie" path="res://02 sol beach (day).wav" id="1_osxdh"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_osxdh")
+autoplay = true
